@@ -117,8 +117,8 @@ pub fn main() !void {
         defer window.swapBuffers();
         defer frame_counter += 1;
         //--------------------------------------------------------------------
-        gui.setNextWindowPos(  .{ .x = 150.0, .y = 300.0 } );
-        gui.setNextWindowSize( .{ .w = 150.0, .h =  50.0 } );
+        gui.setNextWindowPos(  .{ .x = 150.0, .y = 300.0, .cond = .first_use_ever } );
+        gui.setNextWindowSize( .{ .w = 150.0, .h =  50.0, .cond = .first_use_ever } );
         if ( gui.begin("My Window", .{}) ) {
             if ( gui.button( "Boop", .{ .w = 120.0 } ) ) {
                 main_logger.info( "The button was booped!", .{} );
