@@ -1,7 +1,7 @@
 .{
     .name = .mre,
     .version = "0.0.1",
-    .fingerprint = 0x35a6716c776cde5f,
+    .fingerprint = 0x9f9f0fc2f0da6fbf,
     .minimum_zig_version = "0.15.1",
     .dependencies = .{
         .zglfw = .{
