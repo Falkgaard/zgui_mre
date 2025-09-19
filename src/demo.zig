@@ -1,4 +1,4 @@
-const std = @import("std");
+const std       = @import("std");
 const app_info  = @import("app_info");
 const glfw      = @import("zglfw");
 const gui       = @import("zgui");
